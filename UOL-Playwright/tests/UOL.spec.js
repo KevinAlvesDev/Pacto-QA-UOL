@@ -11,7 +11,6 @@ test('Acessa UOL, clica no link de normas e valida atualização', async ({ page
   const link = page.locator(linkSelector);
   await expect(link).toBeVisible();
 
-  // Clica no link
   await link.click();
 
   await page.waitForURL('**/normas-de-seguranca-e-privacidade.html');
